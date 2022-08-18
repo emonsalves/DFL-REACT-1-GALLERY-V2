@@ -2,7 +2,8 @@ import './App.css';
 import Footer from './layout/Footer';
 import Header from './layout/Header';
 import Section from './layout/Section';
-
+import React from 'react'
+import Mplayer from './components/Mplayer';
 
 function App() {
 
@@ -66,11 +67,12 @@ function App() {
   }
   ]
   return (
-    <div>
-      <Header />
+    <>
+      <Header titulo={"Galeria de Digimons con React"}/>
       <Section digimons={digimons} />
-      <Footer />
-    </div>
+      <Mplayer/>
+      <Footer titulo= "Descripción Digimons" descripcion={"Los Digimon (デジモン Dejimon)  son criaturas de la franquicia japonesa Digimon.En la ficción, sus cuerpos están hechos de  información digital, y cuando reciben gran daño, la información con la que están constituidos se daña y son destruidos."}/>
+    </>
   );
 }
 

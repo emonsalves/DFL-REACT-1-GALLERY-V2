@@ -1,7 +1,8 @@
 import Card from "../components/Card"
+
 function Section({digimons}) {
   return (
-    <div className ="flex flex-wrap mt-10 pt-10 m-1 gap-3 justify-center">
+    <div className = "flex justify-center flex-wrap mt-11 pt-12 gap-3 bg-slate-400 min-h-screen">
       <Card digimons={digimons[0]}/>
       <Card digimons={digimons[1]}/>
       <Card digimons={digimons[2]}/>
